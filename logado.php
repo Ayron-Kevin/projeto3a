@@ -8,6 +8,8 @@ $execute= mysqli_query($conexao,$select);
 $dados= mysqli_fetch_row($execute);
 
 if($login== $dados[1] && $senha== $dados[2]){
+    session_start();
+    $_SESSION['nome']= $dados[0];
     header('location:index.php');
 }else{
     header('location:login.php');
