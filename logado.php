@@ -8,9 +8,9 @@ $execute= mysqli_query($conexao,$select);
 $dados= mysqli_fetch_row($execute);
 
 if($login== $dados[1] && $senha== $dados[2]){
-    echo "logado";
+    header('location:index.php');
 }else{
-    echo "dados errados";
+    header('location:login.php');
 }
 
 
