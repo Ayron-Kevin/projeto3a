@@ -27,6 +27,8 @@ color: white;
             echo $_SESSION['nome']; ?>
         <a href="cadastrar.php">cadastrar</a><br>
         <a href= "logout.php">sair</a>
+        <a href="alterarsenha.php">alterar senha</a><br>
+        <a href="lista.php">lista de usuários</a><br>
          <?php } ?>
 <body>
 <html>
